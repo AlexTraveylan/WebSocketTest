@@ -18,7 +18,7 @@ function getChat()
 
 function sendJSON($infos)
 {
-    header("Accs-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json");
     echo json_encode($infos, JSON_UNESCAPED_UNICODE);
 }
